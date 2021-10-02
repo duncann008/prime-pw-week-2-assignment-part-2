@@ -133,12 +133,13 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';
-let colorTwo = 'blue';
+let colorOne = 'red'; // This variable is set to 'red', but should be 'blue'
+let colorTwo = 'blue'; // This variable is set to 'blue', but should be 'red'
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+//colorTwo = 'purple';  Need to add this on this line to make sure colorTwo is also set to purple if mix is true.
 }
 */
 
@@ -150,7 +151,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
-if (temp > 39 || time >= 4) {
+if (temp > 39 || time >= 4) { // || is an OR operator, not an AND operator.  In this instance, we want &&
   console.log('throw away the food!');
 }
 */
@@ -163,9 +164,9 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {
-  console.log('no entry');
-} else {
-  console.log('enter');
+if(minAge <= age) { // Technically this is checking if minAge is less than or equal to age.  We want if(age >= minAge)
+  console.log('no entry'); // This should be what happens when the condition is true, between the parentheses should be 'enter'
+} else { // The else line with the console.log does not need to be here, as the description does not call for it.
+  console.log('enter'); 
 }
 */
